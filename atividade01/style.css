@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: block;
+}
+.tela{
+    display:flex;
+    flex-direction: column;
+    background-color:rgb(157, 165, 165);
+    width: 600px;
+    height: 600px;
+}
