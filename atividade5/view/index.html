@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Dados do Paciente</h1>
+    <form action="/enviar-dados" method="POST">
+        <div class="dadospaciente">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                </div>
+                <div class="campo">
+                    <label for="datanasc">Data de Nascimento:</label>
+                    <input type="date" id="datanasc" name="datanasc" placeholder="Data de Nascimento" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                </div>
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="CEP" required>
+                </div>
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+                </div>
+            </div>
+            <div class="dadosconsulta">
+                <h1>Dados da Consulta</h1>
+                <div class="campo">
+                    <label for="clinica">Clínica:</label>
+                    <input type="text" id="clinica" name="clinica" placeholder="Clínica" required>
+                </div>
+                <div class="campo">
+                    <label for="especialidade">Especialidade:</label>
+                    <select name="especialidade" id="especialidade" required>
+                        <option value="">Selecione uma especialidade</option>
+                        <option value="cardiologia">Cardiologia</option>
+                        <option value="dermatologia">Dermatologia</option>
+                        <option value="neurologia">Neurologia</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="dataconsulta">Data da Consulta:</label>
+                    <input type="date" id="dataconsulta" name="dataconsulta" placeholder="Data da Consulta" required>
+                </div>
+                <div class="campo">
+                    <label for="horario">Horário:</label>
+                    <input type="time" id="horario" name="horario" placeholder="Horário" required>
+                </div>
+                <div class="campo">
+                    <label for="observacao">Observação:</label>
+                    <textarea id="observacao" name="observacao" placeholder="Observação"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+</body>
+</html>
